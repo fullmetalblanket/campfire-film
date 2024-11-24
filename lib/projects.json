@@ -1,0 +1,244 @@
+{
+  "short_film": {
+    "directing": [
+      {
+        "name": "Murder Shed",
+        "id": "JxzqiboBhtc",
+        "year": "2024",
+        "genre": "Horror Slasher",
+        "length": "3:52",
+        "role": [
+          "writer",
+          "director",
+          "camera",
+          "editor",
+          "foley",
+          "effects"
+        ],
+        "mentions": [
+          {
+            "mentioner": "Horror Film Roulette",
+            "mention": "Official Selection",
+            "icon": "Finalist"
+          }
+        ]
+      },
+      {
+        "name": "Olympic Tchurdalingh",
+        "id": "J3ecXVOsJdc",
+        "year": "2024",
+        "genre": "Mockumentary Inspirational",
+        "length": "5:49",
+        "role": [
+          "writer",
+          "director",
+          "camera",
+          "editor",
+          "effects"
+        ],
+        "mentions": [
+          {
+            "mentioner": "48hr Film Project: Nomination",
+            "mention": "Best Use of Character",
+            "icon": "Nomination"
+          },
+          {
+            "mentioner": "48hr Film Project: Winner",
+            "mention": "Best Mockumentary",
+            "icon": "Award"
+          }
+        ]
+      },
+      {
+        "name": "The Forgotten",
+        "id": "",
+        "year": "2025",
+        "byline": "Written by Geoffrey Calhoun",
+        "genre": "Fantasy Horror",
+        "thumbnail": "/images/thumbnails/the_forgotten.jpg",
+        "role": [
+          "director",
+          "editor",
+          "foley",
+          "effects"
+        ]
+      },
+      {
+        "name": "The Dying Earth",
+        "id": "",
+        "year": "2025",
+        "genre": "Sci-Fi Fantasy",
+        "byline": "Inspired by the Tales of the Dying Earth series by Jack Vance",
+        "thumbnail": "/images/thumbnails/the_dying_earth.jpg",
+        "role": [
+          "writer",
+          "director",
+          "camera",
+          "editor",
+          "foley",
+          "effects"
+        ]
+      },
+      {
+        "name": "Your City To Burn",
+        "id": "",
+        "year": "2025",
+        "genre": "Horror",
+        "thumbnail": "/images/thumbnails/your_city_to_burn.jpg",
+        "role": [
+          "writer",
+          "director",
+          "editor",
+          "foley",
+          "effects"
+        ]
+      },
+      {
+        "name": "Gently Used",
+        "id": "",
+        "year": "2025",
+        "genre": "Supernatural Horror",
+        "thumbnail": "/images/thumbnails/gently_used.jpg",
+        "role": [
+          "writer",
+          "director",
+          "editor",
+          "foley",
+          "effects"
+        ]
+      },
+      {
+        "name": "Red Star",
+        "id": "",
+        "year": "2025",
+        "genre": "Sci-Fi Horror",
+        "thumbnail": "/images/thumbnails/blood_red_star.jpg",
+        "role": [
+          "writer",
+          "director",
+          "editor",
+          "foley",
+          "effects"
+        ]
+      }
+    ],
+    "acting": [
+      {
+        "name": "The Salesman",
+        "id": "",
+        "year": "2025",
+        "byline": "Directed by Mila Puccini",
+        "genre": "Supernatural Horror",
+        "role": [
+          "Cain"
+        ]
+      },
+      {
+        "hide": true,
+        "name": "Caleb's Student Film",
+        "id": "",
+        "year": "2024",
+        "byline": "Directed by Caleb Banks",
+        "role": [
+          "Marauder"
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Ripple",
+        "id": "fIFDjL1uuCw",
+        "year": "2024",
+        "byline": "Directed by Michael Rautio",
+        "genre": "Sci-Fi Drama",
+        "length": "23:42",
+        "role": [
+          "foley",
+          "sound design"
+        ],
+        "mentions": [
+          {
+            "mentioner": "Symbiotic Film Festival: Winner",
+            "mention": "Best Tiny Budget Film",
+            "icon": "Award"
+          },
+          {
+            "mentioner": "Symbiotic Film Festival: Winner",
+            "mention": "Best Science Fiction",
+            "icon": "Award"
+          }
+        ]
+      },
+      {
+        "name": "But More Importantly... Ted",
+        "id": "5W4fbwYf2Po",
+        "year": "2023",
+        "byline": "Directed by Caleb Banks",
+        "genre": "Mockumentary",
+        "length": "6:40",
+        "role": [
+          "gaffer",
+          "camera"
+        ],
+        "mentions": [
+          {
+            "mentioner": "48hr Film Project",
+            "mention": "Detroit",
+            "icon": "Finalist"
+          }
+        ]
+      }
+    ]
+  },
+  "music_video": [
+    {
+      "name": "Pet Semetary",
+      "id": "awrP839Hd4g",
+      "year": "2023",
+      "genre": "music video",
+      "length": "3:52",
+      "byline": "Cover of the Ramones by Secret Hex. Music recorded and produced by Eric Harrison. Video edited by Eric Harrison.",
+      "role": [
+        "vocals"
+      ]
+    },
+    {
+      "name": "Haunt Me",
+      "id": "GqDM_kAZ6N8",
+      "year": "2023",
+      "genre": "music video",
+      "length": "3:57",
+      "role": [
+        "writer",
+        "vocals",
+        "music",
+        "audio production",
+        "video production"
+      ]
+    },
+    {
+      "name": "4th of July",
+      "id": "Uz53DKjYHh0",
+      "year": "2022",
+      "genre": "cover song",
+      "length": "5:15",
+      "byline": "Cover of Soundgarden. Produced by Jason Catlett.",
+      "role": [
+        "vocals"
+      ]
+    },
+    {
+      "name": "Cities In Dust",
+      "id": "-6gpIteDihI",
+      "year": "2022",
+      "quality": "mqdefault",
+      "genre": "cover song",
+      "length": "4:16",
+      "byline": "Cover of Siouxsie and the Banshees. Produced by Eric Harrison.",
+      "role": [
+        "vocals"
+      ]
+    }
+  ]
+}
+

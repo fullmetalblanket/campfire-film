@@ -1,0 +1,24 @@
+{
+  "social": [
+    {
+      "url": "https://www.youtube.com/@tysonely/videos",
+      "icon": "/images/icons/Youtube.svg"
+    },
+    {
+      "url": "https://www.instagram.com/tysonely1",
+      "icon": "/images/icons/Instagram.svg"
+    },
+    {
+      "url": "https://www.tiktok.com/@tyson_ely",
+      "icon": "/images/icons/Tiktok.svg"
+    },
+    {
+      "url": "https://www.facebook.com/tysonely1",
+      "icon": "/images/icons/Facebook.svg"
+    },
+    {
+      "url": "https://www.soundcloud.com/tysonely",
+      "icon": "/images/icons/Soundcloud.svg"
+    }
+  ]
+}
