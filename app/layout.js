@@ -24,10 +24,12 @@ export const viewport = {
   themeColor: '#ffffff',
 };
 
+export const classNames = "bg-gradient-to-br from-orange-500/5 via-orange-400/10 to-amber-300/5";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${classNames}`}>
         <Header />
         <main>{children}</main>
         <Footer />

@@ -1,11 +1,10 @@
 import Image from "next/image";
-import Link from 'next/link';
-import navigation from '@/lib/navigation.json';
+import HomePage from '@/components/content/HomePage'
 
 export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8 pb-0 max-w-5xl">
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+      {/* <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
         <div className="w-full md:w-80 h-96 md:h-max relative rounded-xl overflow-hidden">
           <Image
             src="/images/tyson-ely-shaun.jpg"
@@ -39,9 +38,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-
+      <HomePage />
 
 
       
