@@ -7,7 +7,7 @@ export default function FooterNav() {
 
   return (
     <ul className="flex flex-col md:flex-row md:space-x-4 py-1 justify-center max-w-3xl m-auto divide-y divide-slate-600 md:divide-none">
-      {navigation.main.map(item => {
+      {/* {navigation.main.map(item => {
         const isActive = item.url === pathname; // Determine if the item is active
         const colorClass = isActive ? 'text-gray-100' : 'text-gray-400';
         return (
@@ -17,7 +17,8 @@ export default function FooterNav() {
             </Link>
           </li>
         );
-      })}
+      })} */}
+      <li>nav</li>
     </ul>
   );
 }

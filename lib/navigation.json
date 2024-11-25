@@ -1,16 +1,16 @@
 {
   "main": [
     {
-      "text": "Film / Video",
-      "url": "/film-video"
+      "text": "explore",
+      "url": "/explore"
     },
     {
-      "text": "Music / Audio",
-      "url": "/music-audio"
+      "text": "projects",
+      "url": "/projects"
     },
     {
-      "text": "Contact",
-      "url": "/contact"
+      "text": "community",
+      "url": "/community"
     }
   ]
 }

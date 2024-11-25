@@ -32,3 +32,8 @@ body {
   background-color: #202020;
   color: #ddd;
 } */
+
+.lock-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
