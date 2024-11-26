@@ -23,7 +23,7 @@ export default function GlobalStateInitializer() {
             // canAnalyze,
           } = await getInitialData();
 
-          console.log('GlobalStateInitializer itineraries', itineraries);
+          // console.log('GlobalStateInitializer itineraries', itineraries);
 
           // dispatch({ type: 'SET_USER', payload: user });
           dispatch({ type: 'SET_ITINERARIES', payload: itineraries });

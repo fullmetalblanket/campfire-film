@@ -1,16 +1,16 @@
 {
   "main": [
     {
+      "text": "events",
+      "url": "/events"
+    },
+    {
       "text": "explore",
       "url": "/explore"
     },
     {
-      "text": "projects",
-      "url": "/projects"
-    },
-    {
-      "text": "community",
-      "url": "/community"
+      "text": "profile",
+      "url": "/user/dashboard"
     }
   ]
 }

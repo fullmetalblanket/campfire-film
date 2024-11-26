@@ -10,7 +10,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <div className="relative flex justify-center">
-        {/* <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=2025')] bg-cover bg-center opacity-10" /> */}
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=2025')] bg-cover bg-center opacity-10" />
         <div className="relative z-10 container mx-auto px-0 text-center">
           {/* <div className="flex justify-center mb-6">
             <Flame className="h-16 w-16 text-orange-500 animate-pulse" />
@@ -70,7 +70,7 @@ export default function HomePage() {
               <Link href="/auth/signup">Sign Up</Link>
             </Button>
           </div>
-          <div className="flex justify-center opacity-50 px-2">
+          <div className="flex justify-center opacity-60 px-2">
             <LogoFull size={400} color="#EA580C" />
           </div>
 

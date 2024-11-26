@@ -10,8 +10,8 @@ export default function LoadingOverlay({
   }) {
 
   return (
-    <div className={`${position} ${showBackground ? 'bg-white/65' : ''} top-0 left-0 w-full h-full bg-opacity-50 flex items-center justify-center z-10 text-black`}>
-      <Container className="max-w-sm mt-[-5%] bg-white shadow-lg" background={false}>
+    <div className={`${position} ${showBackground ? 'bg-black/35' : ''} top-0 left-0 w-full h-full bg-opacity-50 flex items-center justify-center z-10 text-black`}>
+      <Container className="max-w-sm mt-[-5%] bg-white/90 shadow-lg" background={false}>
         <div className="text-center">
           {title && <h2 className={`text-2xl font-bold ${description ? 'mb-2' : 'mb-5'}`}>{title}</h2>}
           {description && <p className="text-gray-600 mb-5">{description}</p>}

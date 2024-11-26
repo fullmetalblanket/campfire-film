@@ -19,8 +19,8 @@ export default function Dashboard() {
   const { initialized } = state;
 
   useEffect(() => {
-    console.log('\ninitialized',initialized);
-    console.log('session',session);
+    // console.log('\ninitialized',initialized);
+    // console.log('session',session);
     if (initialized && session) {
       // if (!tempItineraryInitialized.current) {
       //   tempItineraryInitialized.current = true;
