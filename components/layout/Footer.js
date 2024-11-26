@@ -24,7 +24,7 @@ export default function Footer() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollY]);
+  }, [handleScroll, lastScrollY]);
 
   return (
     <footer className={`fixed z-40 bottom-0 left-0 border-t border-t-slate-500 right-0 bg-gray-800/80 backdrop-blur-md transition-transform duration-300 ${isVisible ? 'translate-y-0' : 'translate-y-full'}`}>
