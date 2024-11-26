@@ -25,9 +25,10 @@ export default function Login() {
 
   useEffect(() => {
     if (status === 'authenticated') {
+      console.log('login page')
       const from = new URLSearchParams(window.location.search).get('from');
       const isUserRoute = userRoutes.includes(from);
-      const callbackUrl = isUserRoute && from || '/user/dashboard';
+      const callbackUrl = isUserRoute && from || '/';
       router.push(callbackUrl);
     }
   }, [status, router]);
@@ -88,7 +89,7 @@ export default function Login() {
   };
 
   if (status === 'loading') {
-    return <PageContainer><LoadingOverlay text="loading..." /></PageContainer>;
+    return <PageContainer><LoadingOverlay text="loading login..." /></PageContainer>;
   }
 
   if (status === 'authenticated') {

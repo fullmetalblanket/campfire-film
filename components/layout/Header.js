@@ -81,7 +81,7 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className={`sticky top-0 z-50 h-18 bg-gray-800/70 bg-yellow-950/70 backdrop-blur-md shadow-md border-b border-b-slate-700 border-b-orange-700/50 transition-transform duration-300 ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <header className={`sticky top-0 z-50 h-18 bg-gray-900/70 backdrop-blur-md shadow-md border-b border-b-slate-600 transition-transform duration-300 ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto px-4 pt-1 pb-2 flex items-center justify-between">
         
         {/* Mobile Menu Button */}

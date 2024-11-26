@@ -27,7 +27,7 @@ export default function Footer() {
   }, [lastScrollY]);
 
   return (
-    <footer className={`fixed z-40 bottom-0 left-0 border-t border-t-slate-700 border-t-yellow-700/70 right-0 bg-gray-700 bg-yellow-950/80 backdrop-blur-md transition-transform duration-300 ${isVisible ? 'translate-y-0' : 'translate-y-full'}`}>
+    <footer className={`fixed z-40 bottom-0 left-0 border-t border-t-slate-500 right-0 bg-gray-800/80 backdrop-blur-md transition-transform duration-300 ${isVisible ? 'translate-y-0' : 'translate-y-full'}`}>
       <div className="pb-2">
         <FooterNav />
       </div>

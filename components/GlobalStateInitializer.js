@@ -9,30 +9,31 @@ import getInitialData from '@/lib/getInitialData';
 
 export default function GlobalStateInitializer() {
   const { status } = useSession();
-
   const { dispatch } = useGlobalState();
 
   useEffect(() => {
     async function initializeGlobalState() {
+      console.log('initializeGlobalState')
       if (status === 'authenticated') {
         try {
-          const {
-            // user,
-            itineraries,
-            // reportPurchases,
-            // canAnalyze,
-          } = await getInitialData();
+          // const {
+          //   // user,
+          //   itineraries,
+          //   // reportPurchases,
+          //   // canAnalyze,
+          // } = await getInitialData();
 
           // console.log('GlobalStateInitializer itineraries', itineraries);
 
           // dispatch({ type: 'SET_USER', payload: user });
-          dispatch({ type: 'SET_ITINERARIES', payload: itineraries });
-          dispatch({ type: 'SET_INITIALIZED', payload: true });
+          // dispatch({ type: 'SET_ITINERARIES', payload: itineraries });
+          
         } catch (error) {
           console.error('Error initializing global state:', error);
           dispatch({ type: 'SET_ERROR', payload: error.message });
         }
       }
+      dispatch({ type: 'SET_INITIALIZED', payload: true });
     }
 
     initializeGlobalState();

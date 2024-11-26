@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react';
-import { useSession } from 'next-auth/react';
+import { useSession, signOut } from 'next-auth/react';
 import PageContainer from '@/components/layout/PageContainer';
 import Container from '@/components/layout/Container';
 // import UserItineraries from '@/components/UserItineraries';
@@ -9,6 +9,7 @@ import LoadingOverlay from '@/components/ui/LoadingOverlay';
 import { useGlobalState } from '@/components/store/GlobalStateContext';
 // import handleTempItinerary from '@/lib/handleTempItinerary';
 // import localStorageHelper from '@/lib/localStorageHelper';
+import NavLink from '@/components/nav/NavLink';
 
 export default function Dashboard() {
   const { data: session } = useSession();
@@ -41,7 +42,7 @@ export default function Dashboard() {
   // };
 
   if (!isReady) {
-    return <PageContainer><LoadingOverlay text="loading dashboard..." /></PageContainer>;
+    return <LoadingOverlay text="loading dashboard..." />;
   }
 
   if (!session && isReady) {
@@ -64,6 +65,9 @@ export default function Dashboard() {
       <Container className="bg-white/70">
         {/* <UserItineraries itineraries={itineraries} /> */}
       </Container>
+      <div>
+        <NavLink href="#" onClick={() => signOut()}>Sign Out</NavLink>
+      </div>
     </PageContainer>
   );
 }
