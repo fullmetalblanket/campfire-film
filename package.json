@@ -7,14 +7,17 @@
     "dev": "docker-compose up -d && PORT=2025 next dev",
     "docker:down": "docker-compose down",
     "build": "next build",
+    "build:prod": "node lib/build-prod.js",
     "start": "next start",
     "lint": "next lint",
     "login": "git config user.email \"admin@fullmetalblanket.com\"",
-    "version:patch": "npm version patch --no-git-tag-version"
+    "version:patch": "npm version patch --no-git-tag-version",
+    "deploy:namecheap": "node -r dotenv/config lib/deployToNamecheap.js"
   },
   "dependencies": {
     "@auth/mongodb-adapter": "^3.7.4",
     "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.460.0",
     "mongodb": "^6.11.0",
