@@ -11,7 +11,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <div className="relative flex justify-center">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=2025')] bg-cover bg-center opacity-10" />
-        <div className="relative z-10 container mx-auto px-0 text-center">
+        <div className="relative z-10 container mx-auto py-1 pb-8 text-center">
           {/* <div className="flex justify-center mb-6">
             <Flame className="h-16 w-16 text-orange-500 animate-pulse" />
           </div> */}
@@ -37,7 +37,7 @@ export default function HomePage() {
       </div>
 
       {/* Features Section */}
-      <div className="pt-20 pb-10 bg-background">
+      <div className="pt-14 pb-10">
         <div className="container mx-auto px-0">
           <h2 className="text-4xl font-bold text-center mb-10 text-white/80">
             Share Your Story with Us
