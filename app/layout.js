@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import AuthProvider from '@/components/AuthProvider';
 import ClientWrapper from '@/components/store/ClientWrapper';
+import GlobalStateInitializer from '@/components/GlobalStateInitializer';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { generateMetadata } from '@/lib/metadataHelper';
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${classNames}`}>
         <AuthProvider>
           <ClientWrapper>
+            <GlobalStateInitializer />
             <Header />
             <main>{children}</main>
             <Footer />

@@ -2,16 +2,24 @@
 
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import PageContainer from '@/components/layout/PageContainer';
 import Container from '@/components/layout/Container';
 import NavLink from '@/components/nav/NavLink';
+import Button from '@/components/ui/Button';
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const emailInputRef = useRef(null);
+
+  useEffect(() => {
+    if (emailInputRef.current) {
+      emailInputRef.current.focus();
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -60,20 +68,21 @@ export default function ForgotPasswordPage() {
             <input
               type="email"
               id="email"
+              ref={emailInputRef}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-3 py-2 border rounded"
+              className="mb-2 w-full px-3 py-2 border rounded border-slate-400 bg-gray-700"
               disabled={isLoading}
             />
           </div>
-          <button 
+          <Button 
             type="submit" 
-            className="w-full bg-blue-500 text-white py-2 rounded disabled:bg-blue-300"
+            className="w-full"
             disabled={isLoading}
           >
             {isLoading ? 'Sending...' : 'Send Reset Link'}
-          </button>
+          </Button>
         </form>
         <div className="text-center mt-8">
           <NavLink href="/auth/login">Back to Login</NavLink>

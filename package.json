@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 2025",
+    "dev:old": "next dev -p 2025",
+    "dev": "docker-compose up -d && PORT=2025 next dev",
+    "docker:down": "docker-compose down",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -15,6 +17,7 @@
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.460.0",
+    "mongodb": "^6.11.0",
     "next": "14.2.15",
     "next-auth": "^4.24.10",
     "node-ssh": "^13.2.0",

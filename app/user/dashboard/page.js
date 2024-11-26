@@ -4,39 +4,41 @@ import { useEffect, useState, useRef } from 'react';
 import { useSession } from 'next-auth/react';
 import PageContainer from '@/components/layout/PageContainer';
 import Container from '@/components/layout/Container';
-import UserItineraries from '@/components/UserItineraries';
+// import UserItineraries from '@/components/UserItineraries';
 import LoadingOverlay from '@/components/ui/LoadingOverlay';
 import { useGlobalState } from '@/components/store/GlobalStateContext';
-import handleTempItinerary from '@/lib/handleTempItinerary';
-import localStorageHelper from '@/lib/localStorageHelper';
+// import handleTempItinerary from '@/lib/handleTempItinerary';
+// import localStorageHelper from '@/lib/localStorageHelper';
 
 export default function Dashboard() {
   const { data: session } = useSession();
   const { state, dispatch } = useGlobalState();
   const [isReady, setIsReady] = useState(false);
-  const tempItineraryInitialized = useRef(false);
+  // const tempItineraryInitialized = useRef(false);
 
-  const { initialized, itineraries } = state;
+  const { initialized } = state;
 
   useEffect(() => {
+    console.log('\ninitialized',initialized);
+    console.log('session',session);
     if (initialized && session) {
-      if (!tempItineraryInitialized.current) {
-        tempItineraryInitialized.current = true;
-        checkTempItinerary();
-      }
+      // if (!tempItineraryInitialized.current) {
+      //   tempItineraryInitialized.current = true;
+      //   checkTempItinerary();
+      // }
       setIsReady(true);
     } else if (initialized) {
       setIsReady(true);
     }
   }, [initialized, session, dispatch]);
 
-  const checkTempItinerary = async () => {
-    const response = await handleTempItinerary();
-    const payload = response?.payload;
-    if (payload) {
-      dispatch({ type: 'ADD_ITINERARY', payload });
-    }
-  };
+  // const checkTempItinerary = async () => {
+  //   const response = await handleTempItinerary();
+  //   const payload = response?.payload;
+  //   if (payload) {
+  //     dispatch({ type: 'ADD_ITINERARY', payload });
+  //   }
+  // };
 
   if (!isReady) {
     return <PageContainer><LoadingOverlay text="loading dashboard..." /></PageContainer>;
@@ -60,7 +62,7 @@ export default function Dashboard() {
         <p className="text-lg mb-6">Welcome {session.user.name || session.user.email}!</p>
       </div>
       <Container className="bg-white/70">
-        <UserItineraries itineraries={itineraries} />
+        {/* <UserItineraries itineraries={itineraries} /> */}
       </Container>
     </PageContainer>
   );

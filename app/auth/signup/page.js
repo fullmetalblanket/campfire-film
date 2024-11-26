@@ -88,7 +88,7 @@ export default function Signup() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded border border-slate-400 rounded bg-gray-700border border-slate-400 rounded bg-gray-700"
               disabled={isLoading}
             />
           </div>
@@ -100,7 +100,7 @@ export default function Signup() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="mb-2 w-full px-3 py-2 border rounded"
+              className="mb-2 w-full px-3 py-2 border border-slate-400 rounded bg-gray-700"
               disabled={isLoading}
             />
           </div>
