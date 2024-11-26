@@ -20,8 +20,8 @@ export default function Button({ children, onClick, variant="primary", size="md"
       iconSizes = {height: 20, width: 20};
   }
 
-  const baseClasses = `py-0 rounded-lg tracking-widest uppercase disabled:opacity-50 disabled:pointer-events-none ${iconClasses}`;
-  const primaryClasses = `${baseClasses} bg-blue-500 text-white hover:bg-blue-600`;
+  const baseClasses = `font-bold py-0 rounded-lg tracking-widest uppercase disabled:opacity-50 disabled:pointer-events-none ${iconClasses}`;
+  const primaryClasses = `${baseClasses} bg-orange-500 text-white hover:bg-orange-600`;
   const secondaryClasses = `${baseClasses} bg-gray-400 text-white hover:bg-gray-500`;
   const outlineClasses = `${baseClasses} border border-gray-400 text-gray-600 bg-white hover:text-black hover:bg-gray-100`;
   const addToCartClasses = `${baseClasses} bg-green-600 text-white hover:bg-green-500`;

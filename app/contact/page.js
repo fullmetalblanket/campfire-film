@@ -4,6 +4,7 @@ import { useState } from 'react';
 import PageContainer from '@/components/layout/PageContainer';
 import Container from '@/components/layout/Container';
 import FeedbackMessage from '@/components/ui/FeedbackMessage';
+import Button from '@/components/ui/Button';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -80,17 +81,17 @@ export default function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              className="w-full px-3 py-2 border border-slate-400 rounded bg-gray-700"
+              className="w-full mb-2 px-3 py-2 border border-slate-400 rounded bg-gray-700"
               rows="4"
             ></textarea>
           </div>
-          <button 
+          <Button 
             type="submit" 
-            className="w-full bg-blue-500 text-white py-2 rounded disabled:bg-blue-300"
+            className="w-full"
             disabled={status === 'sending'}
           >
             {status === 'sending' ? 'Sending...' : 'Send Message'}
-          </button>
+          </Button>
         </form>
       </Container>
     </PageContainer>

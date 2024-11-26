@@ -14,12 +14,17 @@
   }
 } */
 
+html {
+  height: 100%;
+}
+
 body {
   color: #ffffff;
   background: rgb(23, 23, 23);
   /* color: var(--foreground);
   background: var(--background); */
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
 @layer utilities {
@@ -36,4 +41,8 @@ body {
 .lock-scroll {
   overflow: hidden;
   height: 100vh;
+}
+
+form input {
+  color: black;
 }
